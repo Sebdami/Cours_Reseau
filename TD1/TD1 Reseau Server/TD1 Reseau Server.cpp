@@ -1,6 +1,6 @@
 // TD1 Reseau Server.cpp : définit le point d'entrée pour l'application console.
 //
-
+#include "stdafx.h"
 #include <WinSock2.h>
 #include <ws2tcpip.h>
 #include <iostream>
