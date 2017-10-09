@@ -21,7 +21,7 @@ int main()
 	}
 
 
-	struct addrinfo *result = NULL, *ptr = NULL, hints;
+	struct addrinfo *result = NULL, hints;
 
 	ZeroMemory(&hints, sizeof(hints));
 	hints.ai_family = AF_INET; // IPv4
@@ -93,8 +93,11 @@ int main()
 	do {
 
 		iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
-		if (iResult > 0) { // If iResult > 0 we recieved data
+		if (iResult > 0) { // If iResult > 0 we received data
 			std::cout << "Bytes received: " << iResult << std::endl;
+			std::cout << "Message received: ";
+			std::cout.write(recvbuf, iResult);
+			std::cout << std::endl;
 
 			// Echo the buffer back to the sender
 			iSendResult = send(ClientSocket, recvbuf, iResult, 0);
@@ -105,6 +108,9 @@ int main()
 				return 1;
 			}
 			std::cout << "Bytes sent: " << iSendResult << std::endl;
+			std::cout << "Message sent: ";
+			std::cout.write(recvbuf, iResult);
+			std::cout << std::endl;
 		}
 		else if (iResult == 0) // If it is equal to 0 there is nothing more to get, close the connection
 			std::cout << "Connection closing..." << std::endl;

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TD1 Reseau", "TD1 Reseau\TD1 Reseau.vcxproj", "{23AEB9AC-2D81-4E24-AD6E-826E1AF2EC38}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TD1 Reseau Server", "..\TD1 Reseau Server\TD1 Reseau Server.vcxproj", "{5F89CFFB-D5E0-4B7B-8D2E-FF332F3BCAD5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TD1 Reseau Server", "TD1 Reseau Server\TD1 Reseau Server.vcxproj", "{5F89CFFB-D5E0-4B7B-8D2E-FF332F3BCAD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
