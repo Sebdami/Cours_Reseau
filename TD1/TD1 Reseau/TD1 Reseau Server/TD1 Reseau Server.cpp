@@ -23,6 +23,7 @@ int main()
 
 	struct addrinfo *result = NULL, hints;
 
+
 	ZeroMemory(&hints, sizeof(hints));
 	hints.ai_family = AF_INET; // IPv4
 	hints.ai_socktype = SOCK_STREAM; // This socket will be a stream socket
